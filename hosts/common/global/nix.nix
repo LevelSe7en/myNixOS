@@ -10,8 +10,8 @@ in {
     package = pkgs.nixVersions.nix_2_22;
 
     settings = {
-      extra-substituters = lib.mkAfter ["https://cache.m7.rs"];
-      extra-trusted-public-keys = ["cache.m7.rs:kszZ/NSwE/TjhOcPPQ16IuUiuRSisdiIwhKZCxguaWg="];
+#      extra-substituters = lib.mkAfter ["https://cache.m7.rs"];
+#      extra-trusted-public-keys = ["cache.m7.rs:kszZ/NSwE/TjhOcPPQ16IuUiuRSisdiIwhKZCxguaWg="];
       trusted-users = [
         "root"
         "@wheel"
@@ -20,13 +20,13 @@ in {
       experimental-features = [
         "nix-command"
         "flakes"
-        "ca-derivations"
+#        "ca-derivations"
       ];
-      warn-dirty = false;
+#      warn-dirty = false;
       system-features = [
-        "kvm"
-        "big-parallel"
-        "nixos-test"
+#        "kvm"
+#        "big-parallel"
+#        "nixos-test"
       ];
       flake-registry = ""; # Disable global flake registry
     };
