@@ -1,4 +1,4 @@
-{
+/*{
   inputs,
   lib,
   pkgs,
@@ -13,7 +13,7 @@
 #      ../features/nvim
     ]
 #    ++ (builtins.attrValues outputs.homeManagerModules);
-
+*/
   nix = {
     package = lib.mkDefault pkgs.nix;
     settings = {
