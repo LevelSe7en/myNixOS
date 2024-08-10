@@ -26,7 +26,8 @@
 #      ./kdeconnect.nix
 #      ./upower.nix
     ]
-    ++ (builtins.attrValues outputs.nixosModules);
+     ; #remove, when using ++ nixosModules!
+#    ++ (builtins.attrValues outputs.nixosModules);
 
   home-manager.useGlobalPkgs = true;
   home-manager.extraSpecialArgs = {
