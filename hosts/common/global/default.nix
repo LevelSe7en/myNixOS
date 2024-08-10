@@ -7,6 +7,7 @@
   imports =
     [
       inputs.home-manager.nixosModules.home-manager
+      ./systemd-boot.nix
 #      ./acme.nix
 #      ./auto-upgrade.nix
       ./fish.nix
