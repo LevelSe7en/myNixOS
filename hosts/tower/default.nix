@@ -13,6 +13,7 @@
     ../common/global
 #    ../common/users/sd
 
+    ../common/optional/systemd-boot.nix
 #    ../common/optional/peripherals.nix
 #    ../common/optional/greetd.nix
 #    ../common/optional/pipewire.nix
